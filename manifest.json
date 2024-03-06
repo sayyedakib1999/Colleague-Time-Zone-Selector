@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "Colleague Time Zone Selector",
+    "version": "1.0",
+    "description": "Description : The Colleague Time Zone Selector is a Chrome extension that allows users to effortlessly track and share time zones with colleagues.It simplifies coordination across different time zones by providing real-time information and features a user-friendly interface for efficient collaboration. ",
+    "icons": {
+      "128": "icon.png"
+    },
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+
+    "web_accessible_resources": [
+      "images/*",
+      "css/*",
+      "fonts/*"
+    ]
+
+  }
+  

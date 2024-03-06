@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone Selector</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <script src="content.js"></script>
+    <script src="background.js"></script>
+
+</head>
+
+<body>
+    <body>
+        <div id="main">
+            <h1>Colleague Time Zone Selector</h1>
+    
+            <input type="text" id="name" placeholder="Your Colleague Name"> <br> <br>
+    
+            <select id="timezone">
+                <!-- Options will be added dynamically using JavaScript -->
+            </select> <br> <br>
+    
+            <button onclick="addColleague()">Add Colleague</button>
+    
+            <h2>Colleague Time Zones:</h2>
+            <ul id="colleague-list"></ul>
+            
+            <!-- Add a div for displaying the current time -->
+            <div id="current-time"></div>
+        </div>
+    
+
+
+</body>
+
+</html>
