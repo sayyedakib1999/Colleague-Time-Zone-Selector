@@ -1,4 +1,5 @@
  // Function to fetch time from WorldTimeAPI
+ 
         function fetchTime() {
             // Get the selected time zone
             const selectedTimeZone = document.getElementById("timezone").value;
@@ -85,7 +86,24 @@
         }
         
         // Call the function to populate the dropdown and load the colleague list on page load
-        window.onload = function () {
+        // window.onload = function () {
+        //     populateTimeZones();
+        //     loadColleagueList();
+        // };
+
+       
+    
+
+        window.addEventListener('load',() => {
             populateTimeZones();
             loadColleagueList();
-        };
+        })
+
+       setTimeout(() => {
+        let addBtnElement = document.getElementById("addColleague")
+        console.log(document.getElementById("addColleague"))
+        
+        addBtnElement.addEventListener("click",() => {
+          addColleague()
+        })
+       },1000)
