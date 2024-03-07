@@ -106,4 +106,7 @@
         addBtnElement.addEventListener("click",() => {
           addColleague()
         })
+        
        },1000)
+
+  
